@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mfcookie.excel.mapper.SysSystemReadMapper">
+
+    <select id="count" resultType="int">
+        select count(1) from sys_system;
+    </select>
+
+    <select id="selectSysSystemVOList" parameterType="com.mfcookie.excel.mapper.SysSystemVO" resultType="com.mfcookie.excel.mapper.SysSystemVO">
+        select * from sys_system
+    </select>
+</mapper>
